@@ -8,3 +8,46 @@
     Salong (салон)
     Piirik (граница)
     Kangek (крепкий)
+
+def loe_sonastik_vene(file_path):
+    sonastik = {}
+    with open(file_path, 'r', encoding='utf-8') as file:
+        for line in file:
+            if '-' in line:
+                vene, eesti = line.strip().split('-')
+                sonastik[vene] = eesti
+            else:
+                print(f"{line.strip()}")
+
+    return sonastik
+
+root = tk.Tk()
+root.geometry("700x380")
+root.title("Quadratic Equation Solver")
+
+entry_a = tk.Entry(root, width=10, font=("Arial", 14))
+entry_a.grid(row=1, column=1)
+
+label_b = tk.Label(root, text="x²+", font=("Arial", 14))
+label_b.grid(row=1, column=2)
+entry_b = tk.Entry(root, width=10, font=("Arial", 14))
+entry_b.grid(row=1, column=3)
+
+label_c = tk.Label(root, text="x+", font=("Arial", 14))
+label_c.grid(row=1, column=4)
+entry_c = tk.Entry(root, width=10, font=("Arial", 14))
+entry_c.grid(row=1, column=5)
+
+label_c = tk.Label(root, text="=0", font=("Arial", 14))
+label_c.grid(row=1, column=6)
+
+calculate_button = tk.Button(root, text="Calculate", bg="green", command=calculate, width=15, height=2, font=("Arial", 14))
+calculate_button.grid(row=1, column=7, padx=5, pady=5)
+
+label_solution = tk.Label(root, text="Решение функции", bg="blue", fg="green", font=("Arial", 16, "bold"))
+label_solution.grid(row=0, column=3)
+
+text_result = tk.Text(root, bg="yellow", width=60, height=5, font=("Arial", 12), state=tk.DISABLED)
+text_result.grid(row=2, column=1, columnspan=7, padx=10, pady=10)
+
+root.mainloop()
