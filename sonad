@@ -8,3 +8,15 @@
     Salong (салон)
     Piirik (граница)
     Kangek (крепкий)
+
+def loe_sonastik_vene(file_path):
+    sonastik = {}
+    with open(file_path, 'r', encoding='utf-8') as file:
+        for line in file:
+            if '-' in line:
+                vene, eesti = line.strip().split('-')
+                sonastik[vene] = eesti
+            else:
+                print(f"{line.strip()}")
+
+    return sonastik
