@@ -25,21 +25,21 @@ root.title("Quadratic Equation Solver")
 
 
 
-label_b = tk.Label(root, text="1", font=("Arial", 14))
+label_b = tk.Label(root, font=("Arial", 14))
 label_b.grid(row=1, column=1,padx=5, pady=5)
-label_c = tk.Label(root, text="2", font=("Arial", 14))
+label_c = tk.Label(root, font=("Arial", 14))
 label_c.grid(row=2, column=1,padx=5, pady=5)
-label_d = tk.Label(root, text="2", font=("Arial", 14))
+label_d = tk.Label(root, font=("Arial", 14))
 label_d.grid(row=3, column=1,padx=5, pady=5)
-label_e = tk.Label(root, text="2", font=("Arial", 14))
+label_e = tk.Label(root, font=("Arial", 14))
 label_e.grid(row=4, column=1,padx=5, pady=5)
-label_f = tk.Label(root, text="2", font=("Arial", 14))
+label_f = tk.Label(root, text=" ", font=("Arial", 14))
 label_f.grid(row=5, column=1,padx=5, pady=5)
-label_g = tk.Label(root, text="2", font=("Arial", 14))
+label_g = tk.Label(root, text=" ", font=("Arial", 14))
 label_g.grid(row=6, column=1,padx=5, pady=5)
 
 
-label_ab = tk.Label(root, text="1", font=("Arial", 14))
+label_ab = tk.Label(root,font=("Arial", 14))
 label_ab.grid(row=1, column=1,padx=5, pady=5)
 label_ac = tk.Label(root, text="2", font=("Arial", 14))
 label_ac.grid(row=1, column=2,padx=5, pady=5)
@@ -118,6 +118,39 @@ label_hf.grid(row=6, column=5,padx=5, pady=5)
 label_hg = tk.Label(root, text="2", font=("Arial", 14))
 label_hg.grid(row=6, column=6,padx=5, pady=5)
 
+
+#class VirtualKeyboard:
+#    def __init__(self, master):
+#        self.master = master
+#        self.master.title("Virtual Keyboard")
+#        self.entry = tk.Entry(master)
+#        self.entry.pack()
+#        self.create_keyboard()
+
+#    def create_keyboard(self):
+#        buttons = [
+#            ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
+#            ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l'],
+#            ['z', 'x', 'c', 'v', 'b', 'n', 'm']
+#        ]
+
+#        for row in buttons:
+#            row_frame = tk.Frame(self.master)
+#            row_frame.pack()
+#            for char in row:
+#                button = tk.Button(row_frame, text=char, width=4, command=lambda c=char: self.insert_char(c))
+#                button.pack(side=tk.LEFT)
+
+#    def insert_char(self, char):
+#        self.entry.insert(tk.END, char)
+
+#def main():
+#    root = tk.tk()
+#    keyboard = virtualkeyboard(root)
+#    root.mainloop()
+
+#if __name__ == "__main__":
+#    main()
 
 
 
