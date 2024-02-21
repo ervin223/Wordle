@@ -1,4 +1,16 @@
 import tkinter as tk
+import random
+
+
+#выбирает из списка рандомное слово
+def choose_word(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        words = file.readlines()
+        return random.choice(words).strip().lower()
+#print(choose_word('sonad2.txt'))
+
+
+
 
 class QuadraticEquationSolver:
     def __init__(self, master):
