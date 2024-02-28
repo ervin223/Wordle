@@ -62,11 +62,14 @@ window.config(bg='black')
 
 EntryBox = tk.Entry()
 EntryBox.grid(row = 99, column = 0, columnspan = 5 )
-GuessButton = tk.Button(text = "OK!", command = getWorld)
+GuessButton = tk.Button(text = "OK!", command = getWorld,bg = 'black',fg = 'white')
 GuessButton.grid(row = 100, column = 0, columnspan = 5)
 
-Resultlabel = tk.Label(text = '')
+Resultlabel = tk.Label(text = '',bg = 'black',fg = 'white')
 Resultlabel.grid(row = 101, column = 0, columnspan = 5)
+
+Userlabel = tk.Label(text = 'Kasutage sõnad "sonad2.txt" nimerkirjast!',bg = 'black',fg = 'white')
+Userlabel.grid(row = 102, column = 0, columnspan = 5)
 
 
 tk.mainloop()
