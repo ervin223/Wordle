@@ -1,6 +1,6 @@
 import tkinter as tk
 import random
-#from tkinter.tix import COLUMN
+
 
 guessNum = 0
 
