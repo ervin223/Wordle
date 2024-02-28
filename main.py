@@ -37,7 +37,7 @@ def getWorld():
             Resultlabel.configure(text = 'Olete võitnud!',bg = 'black',fg = 'green')
         elif guessNum == 5:
             GuessButton.config(state = 'disabled')
-            Resultlabel.configure(text = 'Kaotasite, proovige uue mängu!',bg = 'black',fg = 'white')
+            Resultlabel.configure(text = 'Kaotasite, proovige uue mängu, sõna oli: '+ chosenWorld.upper(), bg = 'black',fg = 'yellow')
         else:
             guessNum += 1
             
