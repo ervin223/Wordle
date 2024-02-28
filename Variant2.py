@@ -2,7 +2,7 @@ import tkinter as tk
 import random
 
 
-#выбирает из списка рандомное слово
+#РІС‹Р±РёСЂР°РµС‚ РёР· СЃРїРёСЃРєР° СЂР°РЅРґРѕРјРЅРѕРµ СЃР»РѕРІРѕ
 def choose_word(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         words = file.readlines()

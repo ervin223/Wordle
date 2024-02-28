@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>71592031-9ad9-4213-88d8-37607feac26b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Variant2.py</StartupFile>
+    <StartupFile>main.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,8 @@
   <ItemGroup>
     <Compile Include="Variant2.py" />
     <Compile Include="Wordle.py" />
+    <Compile Include="main.py" />
+    <Compile Include="words.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="sonad2.txt" />
