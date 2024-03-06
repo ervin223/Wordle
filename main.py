@@ -7,7 +7,7 @@ guessNum = 0
 def getWorld():
     
     correct = 0
-    global guessNum
+    global guessNum #изменится переменная за пределами функции
 
     guessWorld = EntryBox.get()
     print("Arvatud sona on:",guessWorld)
@@ -15,7 +15,7 @@ def getWorld():
     if guessWorld in wordlist:
         for i in range(5):
             label = tk.Label(text = guessWorld[i].upper(),font = 12,pady = 5,borderwidth = 1, relief="solid")
-            label.grid(row = guessNum, column = i, sticky= tk.NSEW)# sticky соединяет в решетку буквы
+            label.grid(row = guessNum, column = i, sticky= tk.NSEW)# sticky соединяет в решетку буквы и занимает все пространство внутри grid
             
             if guessWorld[i] in chosenWorld:
                 if guessWorld[i] == chosenWorld[i]:
